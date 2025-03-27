@@ -38,7 +38,7 @@ if(_ARGV["c"])
 	cfg.close();
 }
 
-if(true)
+if(!_ARGV["p"])
 {
 	HostResolverLine="";
 	QUICLine="";
@@ -136,7 +136,15 @@ if(_ARGV["p"]||_STUDIO_INVOKED)
 	process.python.execfile("/py/server.py")
 }
 
-import web.view.7;
+if(_WIN10_LATER )
+{
+	import web.view;
+}
+else
+{
+	import web.view.7;
+}
+
 
 if(string.len(CMDLine)>=8192) win.msgbox("Too long CMDLine, and this may cause Error. ","Warning");
 var view=web.view(mainForm.mainWeb,0,CMDLine);

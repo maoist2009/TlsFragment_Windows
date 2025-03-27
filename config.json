@@ -26,7 +26,13 @@
         "2400:cb00::/32": "^104.19.229.21"
     },
     "domains": {
+        "inv.nadeko.net": {
+            "IP": "186.105.142.141"
+        },
         "annas-archive.org": {},
+        "mastodon.social": {
+            "IP": "146.75.29.91"
+        },
         "codesandbox.io": {
             "IP": "104.21.3.227"
         },
@@ -80,7 +86,7 @@
             "IP": "199.232.137.164"
         },
         "pornhub.com": {
-            "IP": "216.18.168.16"
+            "IP": "66.254.114.40"
         },
         "help.pornhub.com": {},
         "web.archive.org": {
@@ -111,6 +117,11 @@
             "TLS_frag": 3,
             "TCP_frag": 5
         },
+        "gist.github.com": {
+            "IP": "20.27.177.113",
+            "TLS_frag": 3,
+            "TCP_frag": 5
+        },
         "api.github.com": {
             "IP": "20.27.177.116",
             "TLS_frag": 3,
@@ -134,19 +145,41 @@
         "objects-origin.githubusercontent.com": {
             "IP": "140.82.113.22"
         },
-        "wiki": {
-            "IP": "185.15.58.224",
-            "TLS_frag": 2,
-            "TCP_frag": 3,
-            "num_TCP_fragment": 3,
-            "num_TLS_fragment": 3,
-            "TCP_sleep": 0.01
+        "wikipedia.org": {
+            "IP": "185.15.58.224"
         },
         "upload.wikimedia.org": {
             "IP": "185.15.58.240"
         },
         "wiktionary.org": {
             "IP": "185.15.59.224"
+        },
+        "wikiversity.org": {
+            "IP": "185.15.58.224"
+        },
+        "wikivoyage.org": {
+            "IP": "185.15.58.224"
+        },
+        "wikisource.org": {
+            "IP": "185.15.58.224"
+        },
+        "wikinews.org": {
+            "IP": "185.15.58.224"
+        },
+        "wikidata.org": {
+            "IP": "185.15.58.224"
+        },
+        "species.wikimedia.org": {
+            "IP": "185.15.58.224"
+        },
+        "meta.wikimedia.org": {
+            "IP": "185.15.58.224"
+        },
+        "mediawiki.org": {
+            "IP": "185.15.58.224"
+        },
+        "wikifunctions.org": {
+            "IP": "185.15.58.224"
         },
         "pixiv": {
             "TLS_frag": 3
@@ -172,6 +205,14 @@
             "IP": "35.190.247.145",
             "port": 1445
         },
+        "golang.org": {
+            "IP": "35.190.247.145",
+            "port": 1445
+        },
+        "blogger.com": {
+            "IP": "35.190.247.145",
+            "port": 1445
+        },
         "googlevideo.com": {
             "IPtype": "ipv6"
         },
@@ -188,19 +229,23 @@
             "port": 41620
         },
         "gstatic.com": {
-            "IP": "35.190.247.147",
+            "IP": "35.190.247.146",
             "port": 1445
         },
         "googleapis.com": {
-            "IP": "35.190.247.147",
+            "IP": "35.190.247.146",
             "port": 1445
         },
         "youtube.com": {
-            "IP": "35.190.247.147",
+            "IP": "35.190.247.146",
+            "port": 1445
+        },
+        "youtube-nocookie.com": {
+            "IP": "35.190.247.146",
             "port": 1445
         },
         "youtu.be": {
-            "IP": "35.190.247.147",
+            "IP": "35.190.247.146",
             "port": 1445
         },
         "kstatic.googleusercontent.com": {
@@ -329,8 +374,14 @@
         }
     },
     "pac_domains": [
-        "google$",
+        "ncdn.ec$",
+        "cloudflare-dns.com$",
+        "adminforge.de$",
+        "nadeko.net$",
+        "anoxinon.de$",
         "uptodown.com$",
+        "google$",
+        "freeweibo.com$",
         "fosstodon.org$",
         "smsactivate.s3.eu-central-1.amazonaws.com$",
         "android.com$",
@@ -450,7 +501,6 @@
         "xcancel.com$",
         "geph.io$",
         "1lib.sk$",
-        "freeweibo.com$",
         "odycdn.com$",
         "odysee.com$",
         "torproject.org$",

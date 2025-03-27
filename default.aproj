@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project ver="10" name="TlsFragment" libEmbed="true" icon="lib\icon.ico" ui="win" output="TlsFragment.exe" CompanyName="MLM" FileDescription="Tlsfragment_Windows" LegalCopyright="Copyleft (C) People 2025" ProductName="Tlsfragment_Windows" InternalName="Tlsfragment_Windows" FileVersion="1.0.0.1" ProductVersion="1.0.0.1" publishDir="/dist/" dstrip="false" local="false" ignored="false">
+<project ver="10" name="TlsFragment" libEmbed="true" icon="lib\icon.ico" ui="win" output="TlsFragment.exe" CompanyName="MLM" FileDescription="Tlsfragment_Windows" LegalCopyright="Copyleft (C) People 2025" ProductName="Tlsfragment_Windows" InternalName="Tlsfragment_Windows" FileVersion="1.0.0.12" ProductVersion="1.0.0.12" publishDir="/dist/" dstrip="false" local="false" ignored="false">
 	<file name="main.aardio" path="main.aardio" comment="main.aardio"/>
 	<folder name="资源文件" path="res" embed="true" local="false" ignored="false"/>
 	<folder name="web" path="web" comment="web" local="true" embed="false" ignored="false"/>

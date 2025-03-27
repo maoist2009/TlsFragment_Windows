@@ -1,0 +1,12 @@
+﻿错误发生在文件---------------:
+D:\louiesun\TlsFragment_Windows\main.aardio
+错误信息---------------:
+
+{Error}:
+{Line}:#266
+{File}:D:\louiesun\TlsFragment_Windows\main.aardio
+{Error}:
+{Expected}:'}'
+{Match for}:'{'
+{Match line}:143 
+{Near}:'<eof>'
