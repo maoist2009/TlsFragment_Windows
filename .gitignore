@@ -1,6 +1,9 @@
 py/
 pip
-!py/server.py
+!py/run.py
+!py/config.json
+!py/src
+py/src/tls_fragment/__pycache__
 proxy.pac
 dist
 CMDline.txt

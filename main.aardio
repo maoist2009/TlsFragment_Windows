@@ -20,6 +20,30 @@ var webbase=wsock.tcp.simpleHttpServer.startUrl()
 
 var url="/web/index.html";
 
+if(_ARGV["u"])
+{
+	import inet.http
+	var mirror_list={"https://raw.bgithub.xyz/maoist2009/TlsFragment/refs/heads/main/config.json","https://raw.githubusercontent.com/maoist2009/TlsFragment/refs/heads/main/config.json"}
+	var flag=false
+	var http = inet.http();
+	for id,mirror in mirror_list {
+		var data,err,errCode = http.get(mirror);
+		
+		if( http.statusCode ==200 ){
+    		import fsys.file
+    		var fcfg=fsys.file("/py/config.json","w")
+    		fcfg.write(data)
+    		fcfg.close()
+    		flag=true
+    		break
+		}
+	}
+	if(flag)
+	{
+		win.msgbox("更新config.json配置成功","更新成功")
+	}
+	http.close()
+}
 if(_ARGV["c"]) 
 {
 	import fsys.file;
@@ -101,7 +125,7 @@ if(_ARGV["p"]||_STUDIO_INVOKED)
 	import web.json;
 	
 	
-	var fcfg=fsys.file("config.json")
+	var fcfg=fsys.file("/py/config.json")
 	if(!fsys.file.is(fcfg))
 	{
 		win.msgboxErr("No Config File! ","ERROR!");
@@ -115,7 +139,7 @@ if(_ARGV["p"]||_STUDIO_INVOKED)
 	cfg=web.json.parse(cfg)
 	//win.msgbox(cfg)
 	
-	var pacpath="http://127.0.0.1:"+cfg["listen_PORT"]+"/proxy.pac"
+	var pacpath="http://127.0.0.1:"+cfg["port"]+"/proxy.pac"
 	
 	CMDLine=CMDLine+" --proxy-pac-url="+pacpath;
 	
@@ -133,7 +157,7 @@ if(_ARGV["p"]||_STUDIO_INVOKED)
 		}
 	}
 	
-	process.python.execfile("/py/server.py")
+	process.python.execfile("/py/run.py")
 }
 
 if(_WIN10_LATER )
